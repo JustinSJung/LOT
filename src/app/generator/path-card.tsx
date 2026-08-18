@@ -4,12 +4,7 @@ import { useState } from "react";
 import { NumberBall } from "@/components/number-ball";
 import { LuckProfilePanel } from "./luck-profile-panel";
 import type { LottoNumber, LuckProfile } from "@/lib/lottery";
-
-export interface GeneratorPath {
-  label: string;
-  model: string;
-  description: string;
-}
+import type { GeneratorPathOption as GeneratorPath } from "@/lib/generatorPaths";
 
 interface PathCardProps {
   path: GeneratorPath;
