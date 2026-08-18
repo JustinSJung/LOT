@@ -12,7 +12,8 @@
     "verify-reproducibility": "tsx scripts/verify-backtest-reproducibility.ts",
     "verify-phase6": "tsx scripts/verify-phase6-engine.ts",
     "verify-phase7": "tsx scripts/verify-phase7-analyzer.ts",
-    "verify-phase8": "tsx scripts/verify-phase8-history.ts"
+    "verify-phase8": "tsx scripts/verify-phase8-history.ts",
+    "verify-phase9": "tsx scripts/verify-phase9-statistics.ts"
   },
   "dependencies": {
     "lucide-react": "^1.31.0",

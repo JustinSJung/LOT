@@ -16,7 +16,7 @@ import { fileURLToPath } from "node:url";
 import { ALL_NUMBERS, type Draw } from "../src/lib/lottery/types";
 import { computeFrequency, recentFrequency, hotNumbers, coldNumbers } from "../src/lib/lottery/frequency";
 import { computeGaps } from "../src/lib/lottery/gap";
-import { oddEvenSplit, lowHighSplit, sumDistribution } from "../src/lib/lottery/distribution";
+import { oddEvenDistribution, lowHighDistribution, sumDistribution } from "../src/lib/lottery/distribution";
 import { pairFrequency, tripleFrequency, topEntries } from "../src/lib/lottery/patterns";
 import { runBacktest } from "../src/lib/lottery/backtest";
 import { createRng } from "../src/lib/lottery/rng";
@@ -78,17 +78,8 @@ function main() {
 
   // --- statistics.json: aggregate stats ---
   const sums = sumDistribution(draws);
-  const oddEvenCounts: Record<string, number> = {};
-  const lowHighCounts: Record<string, number> = {};
-  for (const draw of draws) {
-    const { odd, even } = oddEvenSplit(draw.numbers);
-    const key1 = `${odd}:${even}`;
-    oddEvenCounts[key1] = (oddEvenCounts[key1] ?? 0) + 1;
-
-    const { low, high } = lowHighSplit(draw.numbers);
-    const key2 = `${low}:${high}`;
-    lowHighCounts[key2] = (lowHighCounts[key2] ?? 0) + 1;
-  }
+  const oddEvenCounts = oddEvenDistribution(draws);
+  const lowHighCounts = lowHighDistribution(draws);
 
   const pairs = pairFrequency(draws);
   const triples = tripleFrequency(draws);
