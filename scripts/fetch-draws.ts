@@ -57,9 +57,23 @@ async function fetchRound(round: number): Promise<Draw | null> {
     });
 
     if (res.status >= 300 && res.status < 400) {
-      throw new Error(`round ${round}: 차단 추정 (HTTP ${res.status} redirect)`);
+      const location = res.headers.get("location");
+      const body = await res.text();
+      console.error(`\n--- 회차 ${round} 진단 정보 (redirect) ---`);
+      console.error(`HTTP Status: ${res.status} ${res.statusText}`);
+      console.error(`Location 헤더: ${location}`);
+      console.error(`응답 헤더:`, Object.fromEntries(res.headers.entries()));
+      console.error(`응답 본문 (앞 1000자):\n${body.slice(0, 1000)}`);
+      console.error(`--- 진단 정보 끝 ---\n`);
+      throw new Error(`round ${round}: 차단 추정 (HTTP ${res.status} redirect → ${location})`);
     }
     if (!res.ok) {
+      const body = await res.text();
+      console.error(`\n--- 회차 ${round} 진단 정보 (non-OK) ---`);
+      console.error(`HTTP Status: ${res.status} ${res.statusText}`);
+      console.error(`응답 헤더:`, Object.fromEntries(res.headers.entries()));
+      console.error(`응답 본문 (앞 1000자):\n${body.slice(0, 1000)}`);
+      console.error(`--- 진단 정보 끝 ---\n`);
       throw new Error(`round ${round}: HTTP ${res.status}`);
     }
 
@@ -67,7 +81,12 @@ async function fetchRound(round: number): Promise<Draw | null> {
     let data: DhLotteryResponse;
     try {
       data = JSON.parse(text);
-    } catch {
+    } catch (parseErr) {
+      console.error(`\n--- 회차 ${round} 진단 정보 (JSON 파싱 실패) ---`);
+      console.error(`HTTP Status: ${res.status} ${res.statusText}`);
+      console.error(`파싱 에러: ${(parseErr as Error).message}`);
+      console.error(`응답 본문 (앞 1000자):\n${text.slice(0, 1000)}`);
+      console.error(`--- 진단 정보 끝 ---\n`);
       throw new Error(`round ${round}: JSON 파싱 실패 (차단 페이지 응답 가능성)`);
     }
 
@@ -122,7 +141,10 @@ async function main() {
       fetched.push(draw);
       console.log(`회차 ${round} 수집 완료: ${draw.numbers.join(", ")} + ${draw.bonus}`);
     } catch (err) {
-      console.error(`회차 ${round} 수집 실패: ${(err as Error).message}`);
+      const e = err as Error & { cause?: unknown };
+      console.error(`회차 ${round} 수집 실패: ${e.message}`);
+      if (e.cause) console.error(`원인(cause):`, e.cause);
+      if (e.stack) console.error(`스택:\n${e.stack}`);
       break; // stop early; likely to fail for every subsequent round too
     }
     await sleep(DELAY_BETWEEN_REQUESTS_MS);
