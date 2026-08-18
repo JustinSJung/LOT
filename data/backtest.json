@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-08-18T10:09:43.761Z",
+  "drawCount": 0,
+  "requestedSampleSize": 100,
+  "model": "ensemble",
+  "sampleSize": 0,
+  "aiAverageMatch": 0,
+  "randomAverageMatch": 0,
+  "aiThreePlus": 0,
+  "randomThreePlus": 0,
+  "aiFourPlus": 0,
+  "randomFourPlus": 0,
+  "rounds": []
+}

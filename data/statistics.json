@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-08-18T10:09:43.761Z",
+  "drawCount": 0,
+  "hotNumbers": [],
+  "coldNumbers": [],
+  "oddEvenDistribution": {},
+  "lowHighDistribution": {},
+  "sum": {
+    "min": null,
+    "max": null,
+    "average": null,
+    "values": []
+  },
+  "topPairs": [],
+  "topTriples": []
+}
