@@ -1,8 +1,8 @@
 import { ALL_NUMBERS, type LottoNumber } from "./types";
-import { createRng } from "./rng";
+import { createRng, freshSeed } from "./rng";
 
 /** Uniform-random 6-number combination (Fisher-Yates partial shuffle). */
-export function randomCombination(rng: () => number = createRng(Date.now())): LottoNumber[] {
+export function randomCombination(rng: () => number = createRng(freshSeed())): LottoNumber[] {
   const pool = [...ALL_NUMBERS];
   const picked: LottoNumber[] = [];
   for (let i = 0; i < 6; i++) {
@@ -15,7 +15,7 @@ export function randomCombination(rng: () => number = createRng(Date.now())): Lo
 
 export function simulateCombinations(
   count: number,
-  rng: () => number = createRng(Date.now()),
+  rng: () => number = createRng(freshSeed()),
 ): LottoNumber[][] {
   const results: LottoNumber[][] = [];
   for (let i = 0; i < count; i++) results.push(randomCombination(rng));

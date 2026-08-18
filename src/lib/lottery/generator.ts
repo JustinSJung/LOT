@@ -1,6 +1,6 @@
 import type { Draw, LottoNumber, ScoredCombination } from "./types";
 import { randomCombination } from "./monteCarlo";
-import { createRng } from "./rng";
+import { createRng, freshSeed } from "./rng";
 import {
   buildScoringContext,
   scoreFrequency,
@@ -68,8 +68,11 @@ function orderCandidates(
       );
     case "monteCarlo":
       return candidates; // pool is already uniformly random; no re-ranking
-    case "historicalPattern":
     case "balanced":
+      return [...candidates].sort(
+        (a, b) => scoreBalance(b.numbers) - scoreBalance(a.numbers),
+      );
+    case "historicalPattern":
     case "ensemble":
     default:
       return [...candidates].sort((a, b) => b.raw - a.raw);
@@ -92,7 +95,7 @@ export function generateCombinations(
     model = "ensemble",
     count = 5,
     poolSize = GENERATOR_POOL_SIZE,
-    rng = createRng(Date.now()),
+    rng = createRng(freshSeed()),
     diversityLimit = Math.max(1, Math.round(count * 0.5)),
   } = options;
 

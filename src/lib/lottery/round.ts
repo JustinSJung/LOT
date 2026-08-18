@@ -15,3 +15,15 @@ export function computeLatestRound(referenceDate: Date = new Date()): number {
   if (diff < 0) return 0;
   return Math.floor(diff / WEEK_MS) + 1;
 }
+
+/** The draw number a freshly-generated/saved set should be checked against. */
+export function computeNextDrawNumber(referenceDate: Date = new Date()): number {
+  return computeLatestRound(referenceDate) + 1;
+}
+
+/** Real-world instant (not a KST-shifted fake) of the next draw, 21:00 KST Saturday. */
+export function computeNextDrawDateTime(referenceDate: Date = new Date()): Date {
+  const nextDrawNumber = computeNextDrawNumber(referenceDate);
+  const kstWallClockMs = ANCHOR_ROUND1_KST_MS + (nextDrawNumber - 1) * WEEK_MS;
+  return new Date(kstWallClockMs - KST_OFFSET_MS);
+}

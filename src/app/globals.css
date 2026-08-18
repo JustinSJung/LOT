@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #fafafa;
 }
 
 @theme inline {
@@ -12,15 +12,35 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+ * Restrained reveal: a soft fade + slight rise, no bounce/overshoot/flash.
+ * Deliberately avoids slot-machine/casino motion (spinning, elastic pop-in,
+ * confetti, screen shake) — this is a data-dashboard tone, not a gacha pull.
+ */
+@keyframes ball-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ball-reveal {
+  opacity: 0;
+  animation: ball-reveal 380ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ball-reveal {
+    animation: none;
+    opacity: 1;
+  }
 }

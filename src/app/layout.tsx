@@ -13,15 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LOTTO AI LAB — Statistical Lottery Intelligence",
+  title: "LOTTO AI LAB — 통계 기반 로또 분석",
   description:
-    "Historical lottery data analysis, statistical scoring, and backtesting for Korea's Lotto 6/45 — for research and entertainment purposes only.",
+    "대한민국 로또 6/45의 과거 당첨 데이터를 분석하고, 통계 점수와 백테스트 결과를 제공하는 서비스입니다 — 연구·재미 목적으로만 이용해주세요.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang="en"
+      lang="ko"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
     >
       <body className="min-h-full flex flex-col bg-neutral-950 text-neutral-50">

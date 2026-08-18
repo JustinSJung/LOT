@@ -19,10 +19,10 @@ export function prizeTier(picked: LottoNumber[], draw: Draw): PrizeTier {
 }
 
 export const PRIZE_LABELS: Record<PrizeTier, string> = {
-  0: "No Prize",
-  1: "1st Prize",
-  2: "2nd Prize",
-  3: "3rd Prize",
-  4: "4th Prize",
-  5: "5th Prize",
+  0: "낙첨",
+  1: "1등",
+  2: "2등",
+  3: "3등",
+  4: "4등",
+  5: "5등",
 };

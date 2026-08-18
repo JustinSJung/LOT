@@ -22,6 +22,7 @@ import type { Draw } from "../src/lib/lottery/types";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = join(__dirname, "..", "data", "draws.json");
+const PUBLIC_DATA_PATH = join(__dirname, "..", "public", "data", "draws.json");
 const MIRROR_URL = "https://smok95.github.io/lotto/results/all.json";
 const REQUEST_TIMEOUT_MS = 20_000;
 
@@ -69,8 +70,11 @@ async function main() {
     }))
     .sort((a, b) => a.drawNumber - b.drawNumber);
 
+  const content = JSON.stringify(draws, null, 2) + "\n";
   mkdirSync(dirname(DATA_PATH), { recursive: true });
-  writeFileSync(DATA_PATH, JSON.stringify(draws, null, 2) + "\n");
+  writeFileSync(DATA_PATH, content);
+  mkdirSync(dirname(PUBLIC_DATA_PATH), { recursive: true });
+  writeFileSync(PUBLIC_DATA_PATH, content);
 
   const latest = draws[draws.length - 1];
   console.log(`저장 완료. 총 ${draws.length}개 회차.`);

@@ -4,8 +4,13 @@
  * from data/draws.json using the statistical engine in src/lib/lottery.
  * Safe to run with zero draws — every output degrades to an honest empty/zero
  * shape rather than fabricating numbers (see /methodology "no fake data" rule).
+ *
+ * data/ is the canonical, version-controlled source. Everything written here
+ * is mirrored into public/data/ too, because the site is a Next.js static
+ * export (`output: 'export'`) with no server at runtime — client components
+ * fetch JSON from public/, not from the repo-root data/ directory.
  */
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ALL_NUMBERS, type Draw } from "../src/lib/lottery/types";
@@ -18,7 +23,9 @@ import { createRng } from "../src/lib/lottery/rng";
 import { DEFAULT_BACKTEST_SAMPLE_SIZE, BACKTEST_SEED } from "../src/lib/lottery/config";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const DATA_DIR = join(__dirname, "..", "data");
+const ROOT_DIR = join(__dirname, "..");
+const DATA_DIR = join(ROOT_DIR, "data");
+const PUBLIC_DATA_DIR = join(ROOT_DIR, "public", "data");
 
 function readDraws(): Draw[] {
   const path = join(DATA_DIR, "draws.json");
@@ -28,12 +35,25 @@ function readDraws(): Draw[] {
 }
 
 function writeJson(filename: string, data: unknown) {
-  writeFileSync(join(DATA_DIR, filename), JSON.stringify(data, null, 2) + "\n");
-  console.log(`작성 완료: data/${filename}`);
+  const content = JSON.stringify(data, null, 2) + "\n";
+  writeFileSync(join(DATA_DIR, filename), content);
+  mkdirSync(PUBLIC_DATA_DIR, { recursive: true });
+  writeFileSync(join(PUBLIC_DATA_DIR, filename), content);
+  console.log(`작성 완료: data/${filename} (+ public/data/${filename})`);
+}
+
+// Keep the client-fetchable copy of draws.json in sync too, even if this
+// script runs without fetch-draws.ts having just run.
+function mirrorDrawsToPublic() {
+  const src = join(DATA_DIR, "draws.json");
+  if (!existsSync(src)) return;
+  mkdirSync(PUBLIC_DATA_DIR, { recursive: true });
+  writeFileSync(join(PUBLIC_DATA_DIR, "draws.json"), readFileSync(src));
 }
 
 function main() {
   const draws = readDraws();
+  mirrorDrawsToPublic();
   const generatedAt = new Date().toISOString();
 
   // --- numbers.json: per-number stats ---
