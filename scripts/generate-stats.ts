@@ -44,7 +44,7 @@ function main() {
     number: n,
     frequency: frequency[n],
     recentFrequency: recentFreq[n],
-    lastSeenRound: gaps[n].lastSeenRound,
+    lastSeenDrawNumber: gaps[n].lastSeenDrawNumber,
     gap: gaps[n].gap,
   }));
 

@@ -5,7 +5,7 @@ import { countMatches } from "./rank";
 import { DEFAULT_BACKTEST_SAMPLE_SIZE, BACKTEST_MIN_HISTORY } from "./config";
 
 export interface BacktestRoundResult {
-  round: number;
+  drawNumber: number;
   aiNumbers: LottoNumber[];
   aiMatches: number;
   randomNumbers: LottoNumber[];
@@ -14,7 +14,7 @@ export interface BacktestRoundResult {
 
 export interface BacktestSummary {
   model: GeneratorModel;
-  /** Rounds actually evaluated (may be less than the requested sample size if history was thin). */
+  /** Draws actually evaluated (may be less than the requested sample size if history was thin). */
   sampleSize: number;
   aiAverageMatch: number;
   randomAverageMatch: number;
@@ -27,7 +27,7 @@ export interface BacktestSummary {
 
 /**
  * For each of the most recent `sampleSize` draws, generates one AI combination
- * using ONLY draws strictly before that round (no look-ahead), plus one random
+ * using ONLY draws strictly before that draw (no look-ahead), plus one random
  * baseline combination, and compares both against the actual result.
  *
  * This reports a historical backtest result only. It does not imply the model
@@ -51,19 +51,19 @@ export function runBacktest(
     rng = Math.random,
   } = options;
 
-  const sorted = [...draws].sort((a, b) => a.round - b.round);
-  const testRounds = sorted.slice(-sampleSize);
+  const sorted = [...draws].sort((a, b) => a.drawNumber - b.drawNumber);
+  const testDraws = sorted.slice(-sampleSize);
   const rounds: BacktestRoundResult[] = [];
 
-  for (const actual of testRounds) {
-    const priorDraws = sorted.filter((d) => d.round < actual.round);
+  for (const actual of testDraws) {
+    const priorDraws = sorted.filter((d) => d.drawNumber < actual.drawNumber);
     if (priorDraws.length < BACKTEST_MIN_HISTORY) continue;
 
     const [aiPick] = generateCombinations(priorDraws, { model, count: 1, poolSize, rng });
     const randomPick = randomCombination(rng);
 
     rounds.push({
-      round: actual.round,
+      drawNumber: actual.drawNumber,
       aiNumbers: aiPick.numbers,
       aiMatches: countMatches(aiPick.numbers, actual),
       randomNumbers: randomPick,

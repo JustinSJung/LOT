@@ -9,12 +9,12 @@ export function computeFrequency(draws: Draw[]): Record<LottoNumber, number> {
   return counts;
 }
 
-/** Frequency across only the most recent `windowSize` draws (by round). */
+/** Frequency across only the most recent `windowSize` draws (by draw number). */
 export function recentFrequency(
   draws: Draw[],
   windowSize: number,
 ): Record<LottoNumber, number> {
-  const recent = [...draws].sort((a, b) => b.round - a.round).slice(0, windowSize);
+  const recent = [...draws].sort((a, b) => b.drawNumber - a.drawNumber).slice(0, windowSize);
   return computeFrequency(recent);
 }
 

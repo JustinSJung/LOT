@@ -8,7 +8,7 @@ export function countMatches(picked: LottoNumber[], draw: Draw): number {
 export function prizeTier(picked: LottoNumber[], draw: Draw): PrizeTier {
   const pickedSet = new Set(picked);
   const matches = draw.numbers.filter((n) => pickedSet.has(n)).length;
-  const bonusMatch = pickedSet.has(draw.bonus);
+  const bonusMatch = pickedSet.has(draw.bonusNumber);
 
   if (matches === 6) return 1;
   if (matches === 5 && bonusMatch) return 2;

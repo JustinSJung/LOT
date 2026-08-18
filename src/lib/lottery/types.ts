@@ -3,7 +3,7 @@ export type LottoNumber = number; // 1-45
 export const ALL_NUMBERS: LottoNumber[] = Array.from({ length: 45 }, (_, i) => i + 1);
 
 export interface Draw {
-  round: number;
+  drawNumber: number;
   date: string; // YYYY-MM-DD
   numbers: [
     LottoNumber,
@@ -13,7 +13,7 @@ export interface Draw {
     LottoNumber,
     LottoNumber,
   ];
-  bonus: LottoNumber;
+  bonusNumber: LottoNumber;
 }
 
 /** 0 = no prize ("낙첨"), 1-5 = prize tier */
@@ -22,8 +22,8 @@ export type PrizeTier = 0 | 1 | 2 | 3 | 4 | 5;
 export interface NumberFrequencyStat {
   number: LottoNumber;
   count: number;
-  lastSeenRound: number | null;
-  gap: number; // rounds since last appearance (relative to latest known round)
+  lastSeenDrawNumber: number | null;
+  gap: number; // draws since last appearance (relative to latest known draw)
 }
 
 export interface ScoreBreakdown {

@@ -1,14 +1,2115 @@
 {
-  "generatedAt": "2026-08-18T10:09:43.761Z",
-  "drawCount": 0,
+  "generatedAt": "2026-08-18T10:28:52.077Z",
+  "drawCount": 1237,
   "requestedSampleSize": 100,
   "model": "ensemble",
-  "sampleSize": 0,
-  "aiAverageMatch": 0,
-  "randomAverageMatch": 0,
-  "aiThreePlus": 0,
-  "randomThreePlus": 0,
+  "sampleSize": 100,
+  "aiAverageMatch": 0.82,
+  "randomAverageMatch": 0.96,
+  "aiThreePlus": 1,
+  "randomThreePlus": 7,
   "aiFourPlus": 0,
   "randomFourPlus": 0,
-  "rounds": []
+  "rounds": [
+    {
+      "drawNumber": 1138,
+      "aiNumbers": [
+        18,
+        19,
+        20,
+        26,
+        33,
+        44
+      ],
+      "aiMatches": 2,
+      "randomNumbers": [
+        1,
+        6,
+        14,
+        22,
+        36,
+        43
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1139,
+      "aiNumbers": [
+        19,
+        30,
+        33,
+        34,
+        40,
+        44
+      ],
+      "aiMatches": 2,
+      "randomNumbers": [
+        9,
+        11,
+        20,
+        23,
+        28,
+        36
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1140,
+      "aiNumbers": [
+        13,
+        17,
+        18,
+        20,
+        33,
+        45
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        3,
+        19,
+        20,
+        23,
+        37,
+        38
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1141,
+      "aiNumbers": [
+        3,
+        13,
+        18,
+        21,
+        33,
+        37
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        4,
+        8,
+        14,
+        26,
+        28,
+        33
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1142,
+      "aiNumbers": [
+        2,
+        13,
+        15,
+        19,
+        21,
+        34
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        4,
+        7,
+        12,
+        16,
+        18,
+        42
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1143,
+      "aiNumbers": [
+        13,
+        19,
+        20,
+        32,
+        34,
+        43
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        14,
+        23,
+        28,
+        31,
+        32,
+        34
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1144,
+      "aiNumbers": [
+        3,
+        15,
+        19,
+        21,
+        33,
+        34
+      ],
+      "aiMatches": 3,
+      "randomNumbers": [
+        12,
+        13,
+        15,
+        24,
+        29,
+        39
+      ],
+      "randomMatches": 2
+    },
+    {
+      "drawNumber": 1145,
+      "aiNumbers": [
+        14,
+        15,
+        19,
+        21,
+        31,
+        34
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        16,
+        22,
+        27,
+        29,
+        33,
+        37
+      ],
+      "randomMatches": 2
+    },
+    {
+      "drawNumber": 1146,
+      "aiNumbers": [
+        18,
+        19,
+        21,
+        30,
+        34,
+        39
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        3,
+        13,
+        25,
+        27,
+        30,
+        36
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1147,
+      "aiNumbers": [
+        7,
+        15,
+        24,
+        30,
+        33,
+        34
+      ],
+      "aiMatches": 2,
+      "randomNumbers": [
+        5,
+        10,
+        12,
+        13,
+        24,
+        25
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1148,
+      "aiNumbers": [
+        11,
+        12,
+        18,
+        19,
+        23,
+        34
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        1,
+        20,
+        27,
+        28,
+        31,
+        44
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1149,
+      "aiNumbers": [
+        6,
+        7,
+        13,
+        15,
+        18,
+        21
+      ],
+      "aiMatches": 2,
+      "randomNumbers": [
+        15,
+        16,
+        35,
+        39,
+        44,
+        45
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1150,
+      "aiNumbers": [
+        5,
+        6,
+        15,
+        18,
+        21,
+        34
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        13,
+        20,
+        30,
+        33,
+        34,
+        43
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1151,
+      "aiNumbers": [
+        1,
+        6,
+        13,
+        34,
+        37,
+        38
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        7,
+        8,
+        11,
+        25,
+        34,
+        41
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1152,
+      "aiNumbers": [
+        12,
+        13,
+        19,
+        21,
+        33,
+        34
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        8,
+        9,
+        11,
+        16,
+        22,
+        44
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1153,
+      "aiNumbers": [
+        7,
+        12,
+        14,
+        15,
+        26,
+        34
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        14,
+        15,
+        17,
+        19,
+        39,
+        45
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1154,
+      "aiNumbers": [
+        12,
+        15,
+        28,
+        33,
+        34,
+        43
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        7,
+        12,
+        16,
+        29,
+        31,
+        32
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1155,
+      "aiNumbers": [
+        7,
+        15,
+        21,
+        33,
+        34,
+        45
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        2,
+        4,
+        16,
+        22,
+        27,
+        43
+      ],
+      "randomMatches": 2
+    },
+    {
+      "drawNumber": 1156,
+      "aiNumbers": [
+        5,
+        6,
+        12,
+        19,
+        20,
+        34
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        22,
+        33,
+        35,
+        36,
+        37,
+        39
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1157,
+      "aiNumbers": [
+        7,
+        15,
+        19,
+        27,
+        33,
+        37
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        5,
+        9,
+        12,
+        22,
+        26,
+        28
+      ],
+      "randomMatches": 3
+    },
+    {
+      "drawNumber": 1158,
+      "aiNumbers": [
+        15,
+        19,
+        27,
+        33,
+        37,
+        40
+      ],
+      "aiMatches": 2,
+      "randomNumbers": [
+        7,
+        14,
+        27,
+        39,
+        40,
+        45
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1159,
+      "aiNumbers": [
+        6,
+        11,
+        19,
+        28,
+        35,
+        37
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        4,
+        5,
+        16,
+        36,
+        38,
+        43
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1160,
+      "aiNumbers": [
+        7,
+        14,
+        15,
+        20,
+        34,
+        37
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        10,
+        15,
+        37,
+        40,
+        41,
+        45
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1161,
+      "aiNumbers": [
+        6,
+        7,
+        14,
+        34,
+        38,
+        40
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        2,
+        15,
+        33,
+        38,
+        43,
+        44
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1162,
+      "aiNumbers": [
+        8,
+        19,
+        33,
+        34,
+        35,
+        37
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        4,
+        15,
+        24,
+        28,
+        36,
+        38
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1163,
+      "aiNumbers": [
+        15,
+        16,
+        19,
+        21,
+        37,
+        45
+      ],
+      "aiMatches": 2,
+      "randomNumbers": [
+        4,
+        10,
+        30,
+        31,
+        33,
+        45
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1164,
+      "aiNumbers": [
+        3,
+        11,
+        14,
+        15,
+        21,
+        37
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        2,
+        5,
+        6,
+        9,
+        27,
+        44
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1165,
+      "aiNumbers": [
+        8,
+        14,
+        27,
+        30,
+        37,
+        39
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        10,
+        11,
+        12,
+        27,
+        37,
+        40
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1166,
+      "aiNumbers": [
+        6,
+        10,
+        11,
+        14,
+        35,
+        37
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        2,
+        3,
+        22,
+        27,
+        41,
+        43
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1167,
+      "aiNumbers": [
+        6,
+        11,
+        31,
+        37,
+        40,
+        44
+      ],
+      "aiMatches": 2,
+      "randomNumbers": [
+        18,
+        23,
+        38,
+        39,
+        40,
+        44
+      ],
+      "randomMatches": 3
+    },
+    {
+      "drawNumber": 1168,
+      "aiNumbers": [
+        10,
+        12,
+        15,
+        26,
+        34,
+        37
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        6,
+        7,
+        13,
+        17,
+        18,
+        25
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1169,
+      "aiNumbers": [
+        1,
+        3,
+        10,
+        11,
+        17,
+        37
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        6,
+        11,
+        26,
+        38,
+        39,
+        44
+      ],
+      "randomMatches": 2
+    },
+    {
+      "drawNumber": 1170,
+      "aiNumbers": [
+        7,
+        10,
+        11,
+        15,
+        19,
+        36
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        2,
+        8,
+        19,
+        31,
+        32,
+        39
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1171,
+      "aiNumbers": [
+        2,
+        10,
+        11,
+        16,
+        21,
+        27
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        4,
+        8,
+        12,
+        30,
+        36,
+        37
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1172,
+      "aiNumbers": [
+        7,
+        10,
+        22,
+        27,
+        36,
+        37
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        13,
+        26,
+        28,
+        34,
+        42,
+        43
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1173,
+      "aiNumbers": [
+        4,
+        8,
+        10,
+        27,
+        38,
+        45
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        1,
+        5,
+        7,
+        9,
+        11,
+        43
+      ],
+      "randomMatches": 2
+    },
+    {
+      "drawNumber": 1174,
+      "aiNumbers": [
+        10,
+        15,
+        16,
+        19,
+        39,
+        41
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        11,
+        12,
+        15,
+        29,
+        35,
+        37
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1175,
+      "aiNumbers": [
+        19,
+        24,
+        27,
+        32,
+        37,
+        42
+      ],
+      "aiMatches": 2,
+      "randomNumbers": [
+        4,
+        14,
+        18,
+        34,
+        36,
+        44
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1176,
+      "aiNumbers": [
+        10,
+        13,
+        19,
+        25,
+        36,
+        39
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        18,
+        24,
+        26,
+        33,
+        40,
+        43
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1177,
+      "aiNumbers": [
+        3,
+        18,
+        27,
+        29,
+        38,
+        45
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        22,
+        24,
+        32,
+        35,
+        37,
+        44
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1178,
+      "aiNumbers": [
+        8,
+        13,
+        27,
+        31,
+        35,
+        38
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        11,
+        12,
+        21,
+        22,
+        28,
+        43
+      ],
+      "randomMatches": 2
+    },
+    {
+      "drawNumber": 1179,
+      "aiNumbers": [
+        13,
+        25,
+        29,
+        31,
+        37,
+        38
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        5,
+        13,
+        17,
+        19,
+        27,
+        45
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1180,
+      "aiNumbers": [
+        10,
+        18,
+        29,
+        31,
+        34,
+        39
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        3,
+        5,
+        20,
+        24,
+        35,
+        37
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1181,
+      "aiNumbers": [
+        10,
+        23,
+        25,
+        36,
+        38,
+        39
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        5,
+        17,
+        20,
+        25,
+        26,
+        32
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1182,
+      "aiNumbers": [
+        7,
+        13,
+        31,
+        35,
+        39,
+        45
+      ],
+      "aiMatches": 2,
+      "randomNumbers": [
+        8,
+        10,
+        19,
+        34,
+        41,
+        42
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1183,
+      "aiNumbers": [
+        7,
+        18,
+        22,
+        25,
+        38,
+        42
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        10,
+        13,
+        15,
+        22,
+        31,
+        40
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1184,
+      "aiNumbers": [
+        3,
+        7,
+        24,
+        26,
+        34,
+        42
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        2,
+        15,
+        24,
+        28,
+        32,
+        41
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1185,
+      "aiNumbers": [
+        7,
+        18,
+        30,
+        39,
+        42,
+        45
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        4,
+        13,
+        14,
+        21,
+        22,
+        38
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1186,
+      "aiNumbers": [
+        12,
+        18,
+        21,
+        30,
+        34,
+        45
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        2,
+        3,
+        5,
+        8,
+        11,
+        32
+      ],
+      "randomMatches": 2
+    },
+    {
+      "drawNumber": 1187,
+      "aiNumbers": [
+        3,
+        7,
+        25,
+        34,
+        38,
+        42
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        5,
+        21,
+        26,
+        38,
+        40,
+        43
+      ],
+      "randomMatches": 3
+    },
+    {
+      "drawNumber": 1188,
+      "aiNumbers": [
+        3,
+        13,
+        24,
+        34,
+        38,
+        42
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        15,
+        17,
+        27,
+        31,
+        38,
+        41
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1189,
+      "aiNumbers": [
+        3,
+        6,
+        7,
+        12,
+        18,
+        38
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        7,
+        9,
+        14,
+        22,
+        28,
+        36
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1190,
+      "aiNumbers": [
+        6,
+        7,
+        16,
+        18,
+        37,
+        40
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        2,
+        4,
+        18,
+        25,
+        32,
+        44
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1191,
+      "aiNumbers": [
+        6,
+        12,
+        21,
+        34,
+        39,
+        44
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        11,
+        28,
+        32,
+        36,
+        39,
+        44
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1192,
+      "aiNumbers": [
+        7,
+        13,
+        24,
+        30,
+        34,
+        42
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        7,
+        10,
+        28,
+        30,
+        32,
+        40
+      ],
+      "randomMatches": 2
+    },
+    {
+      "drawNumber": 1193,
+      "aiNumbers": [
+        12,
+        24,
+        27,
+        30,
+        33,
+        42
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        1,
+        8,
+        12,
+        14,
+        21,
+        42
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1194,
+      "aiNumbers": [
+        3,
+        13,
+        18,
+        34,
+        43,
+        44
+      ],
+      "aiMatches": 2,
+      "randomNumbers": [
+        8,
+        12,
+        28,
+        33,
+        34,
+        35
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1195,
+      "aiNumbers": [
+        9,
+        12,
+        14,
+        21,
+        34,
+        42
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        4,
+        6,
+        11,
+        12,
+        35,
+        42
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1196,
+      "aiNumbers": [
+        8,
+        13,
+        30,
+        31,
+        42,
+        43
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        9,
+        15,
+        21,
+        28,
+        41,
+        43
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1197,
+      "aiNumbers": [
+        3,
+        11,
+        21,
+        30,
+        39,
+        43
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        4,
+        18,
+        23,
+        27,
+        39,
+        44
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1198,
+      "aiNumbers": [
+        3,
+        20,
+        24,
+        31,
+        42,
+        44
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        1,
+        4,
+        6,
+        8,
+        12,
+        38
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1199,
+      "aiNumbers": [
+        7,
+        18,
+        19,
+        33,
+        40,
+        42
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        11,
+        15,
+        28,
+        32,
+        36,
+        41
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1200,
+      "aiNumbers": [
+        3,
+        6,
+        11,
+        21,
+        27,
+        44
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        1,
+        5,
+        7,
+        19,
+        29,
+        34
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1201,
+      "aiNumbers": [
+        1,
+        7,
+        12,
+        18,
+        42,
+        45
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        1,
+        5,
+        9,
+        23,
+        37,
+        42
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1202,
+      "aiNumbers": [
+        14,
+        18,
+        22,
+        23,
+        42,
+        44
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        1,
+        10,
+        21,
+        25,
+        27,
+        37
+      ],
+      "randomMatches": 2
+    },
+    {
+      "drawNumber": 1203,
+      "aiNumbers": [
+        3,
+        13,
+        16,
+        18,
+        33,
+        42
+      ],
+      "aiMatches": 2,
+      "randomNumbers": [
+        3,
+        5,
+        10,
+        19,
+        24,
+        39
+      ],
+      "randomMatches": 2
+    },
+    {
+      "drawNumber": 1204,
+      "aiNumbers": [
+        1,
+        11,
+        16,
+        23,
+        42,
+        44
+      ],
+      "aiMatches": 2,
+      "randomNumbers": [
+        5,
+        10,
+        16,
+        27,
+        29,
+        44
+      ],
+      "randomMatches": 2
+    },
+    {
+      "drawNumber": 1205,
+      "aiNumbers": [
+        12,
+        24,
+        27,
+        33,
+        37,
+        40
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        11,
+        15,
+        27,
+        30,
+        32,
+        38
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1206,
+      "aiNumbers": [
+        1,
+        5,
+        12,
+        13,
+        14,
+        42
+      ],
+      "aiMatches": 2,
+      "randomNumbers": [
+        8,
+        23,
+        25,
+        27,
+        39,
+        45
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1207,
+      "aiNumbers": [
+        10,
+        14,
+        16,
+        19,
+        40,
+        43
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        2,
+        17,
+        22,
+        24,
+        27,
+        35
+      ],
+      "randomMatches": 3
+    },
+    {
+      "drawNumber": 1208,
+      "aiNumbers": [
+        3,
+        12,
+        13,
+        24,
+        27,
+        40
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        4,
+        12,
+        19,
+        22,
+        36,
+        37
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1209,
+      "aiNumbers": [
+        13,
+        14,
+        15,
+        18,
+        39,
+        40
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        11,
+        19,
+        23,
+        33,
+        36,
+        38
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1210,
+      "aiNumbers": [
+        13,
+        14,
+        15,
+        19,
+        33,
+        37
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        10,
+        15,
+        25,
+        30,
+        33,
+        40
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1211,
+      "aiNumbers": [
+        13,
+        14,
+        27,
+        29,
+        33,
+        45
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        10,
+        15,
+        18,
+        33,
+        37,
+        38
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1212,
+      "aiNumbers": [
+        11,
+        12,
+        14,
+        15,
+        19,
+        21
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        2,
+        3,
+        8,
+        12,
+        18,
+        36
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1213,
+      "aiNumbers": [
+        13,
+        14,
+        27,
+        29,
+        37,
+        40
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        2,
+        12,
+        21,
+        39,
+        40,
+        45
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1214,
+      "aiNumbers": [
+        3,
+        13,
+        14,
+        27,
+        29,
+        33
+      ],
+      "aiMatches": 2,
+      "randomNumbers": [
+        14,
+        23,
+        24,
+        30,
+        35,
+        39
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1215,
+      "aiNumbers": [
+        4,
+        14,
+        16,
+        27,
+        36,
+        37
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        4,
+        10,
+        15,
+        16,
+        26,
+        34
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1216,
+      "aiNumbers": [
+        1,
+        3,
+        26,
+        27,
+        34,
+        37
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        5,
+        15,
+        24,
+        25,
+        36,
+        40
+      ],
+      "randomMatches": 2
+    },
+    {
+      "drawNumber": 1217,
+      "aiNumbers": [
+        1,
+        3,
+        27,
+        29,
+        34,
+        39
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        2,
+        15,
+        21,
+        32,
+        38,
+        43
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1218,
+      "aiNumbers": [
+        6,
+        16,
+        27,
+        34,
+        35,
+        37
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        4,
+        8,
+        10,
+        20,
+        21,
+        35
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1219,
+      "aiNumbers": [
+        7,
+        16,
+        27,
+        35,
+        38,
+        45
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        13,
+        20,
+        24,
+        27,
+        39,
+        40
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1220,
+      "aiNumbers": [
+        16,
+        19,
+        24,
+        27,
+        30,
+        33
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        15,
+        17,
+        20,
+        21,
+        29,
+        40
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1221,
+      "aiNumbers": [
+        7,
+        12,
+        15,
+        16,
+        27,
+        30
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        8,
+        15,
+        16,
+        21,
+        26,
+        40
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1222,
+      "aiNumbers": [
+        3,
+        4,
+        7,
+        16,
+        27,
+        28
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        1,
+        2,
+        3,
+        38,
+        39,
+        44
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1223,
+      "aiNumbers": [
+        7,
+        27,
+        28,
+        33,
+        38,
+        40
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        6,
+        11,
+        16,
+        26,
+        30,
+        39
+      ],
+      "randomMatches": 2
+    },
+    {
+      "drawNumber": 1224,
+      "aiNumbers": [
+        12,
+        16,
+        24,
+        27,
+        38,
+        40
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        9,
+        15,
+        17,
+        24,
+        44,
+        45
+      ],
+      "randomMatches": 3
+    },
+    {
+      "drawNumber": 1225,
+      "aiNumbers": [
+        1,
+        8,
+        12,
+        29,
+        38,
+        40
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        5,
+        7,
+        16,
+        17,
+        18,
+        22
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1226,
+      "aiNumbers": [
+        3,
+        7,
+        9,
+        12,
+        27,
+        38
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        9,
+        18,
+        23,
+        24,
+        25,
+        42
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1227,
+      "aiNumbers": [
+        5,
+        12,
+        24,
+        27,
+        38,
+        42
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        3,
+        5,
+        15,
+        16,
+        34,
+        45
+      ],
+      "randomMatches": 2
+    },
+    {
+      "drawNumber": 1228,
+      "aiNumbers": [
+        6,
+        7,
+        18,
+        27,
+        31,
+        38
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        12,
+        26,
+        29,
+        31,
+        41,
+        44
+      ],
+      "randomMatches": 3
+    },
+    {
+      "drawNumber": 1229,
+      "aiNumbers": [
+        1,
+        10,
+        19,
+        27,
+        38,
+        40
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        3,
+        13,
+        18,
+        25,
+        37,
+        42
+      ],
+      "randomMatches": 3
+    },
+    {
+      "drawNumber": 1230,
+      "aiNumbers": [
+        1,
+        10,
+        13,
+        15,
+        27,
+        38
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        6,
+        7,
+        20,
+        21,
+        33,
+        43
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1231,
+      "aiNumbers": [
+        1,
+        2,
+        17,
+        27,
+        38,
+        45
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        4,
+        5,
+        11,
+        15,
+        16,
+        19
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1232,
+      "aiNumbers": [
+        6,
+        10,
+        27,
+        36,
+        38,
+        40
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        9,
+        13,
+        17,
+        32,
+        34,
+        42
+      ],
+      "randomMatches": 0
+    },
+    {
+      "drawNumber": 1233,
+      "aiNumbers": [
+        5,
+        10,
+        20,
+        27,
+        38,
+        40
+      ],
+      "aiMatches": 2,
+      "randomNumbers": [
+        5,
+        19,
+        21,
+        22,
+        31,
+        37
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1234,
+      "aiNumbers": [
+        1,
+        15,
+        23,
+        27,
+        28,
+        44
+      ],
+      "aiMatches": 2,
+      "randomNumbers": [
+        11,
+        15,
+        31,
+        36,
+        39,
+        40
+      ],
+      "randomMatches": 2
+    },
+    {
+      "drawNumber": 1235,
+      "aiNumbers": [
+        5,
+        13,
+        21,
+        23,
+        27,
+        34
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        7,
+        8,
+        16,
+        27,
+        33,
+        38
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1236,
+      "aiNumbers": [
+        1,
+        15,
+        23,
+        27,
+        34,
+        45
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        8,
+        15,
+        21,
+        26,
+        30,
+        40
+      ],
+      "randomMatches": 1
+    },
+    {
+      "drawNumber": 1237,
+      "aiNumbers": [
+        23,
+        24,
+        27,
+        38,
+        42,
+        45
+      ],
+      "aiMatches": 1,
+      "randomNumbers": [
+        5,
+        24,
+        35,
+        39,
+        41,
+        45
+      ],
+      "randomMatches": 0
+    }
+  ]
 }
