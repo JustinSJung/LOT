@@ -10,7 +10,8 @@
     "fetch-draws": "tsx scripts/fetch-draws.ts",
     "generate-stats": "tsx scripts/generate-stats.ts",
     "verify-reproducibility": "tsx scripts/verify-backtest-reproducibility.ts",
-    "verify-phase6": "tsx scripts/verify-phase6-engine.ts"
+    "verify-phase6": "tsx scripts/verify-phase6-engine.ts",
+    "verify-phase7": "tsx scripts/verify-phase7-analyzer.ts"
   },
   "dependencies": {
     "lucide-react": "^1.31.0",

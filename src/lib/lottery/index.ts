@@ -12,4 +12,5 @@ export * from "./scoring";
 export * from "./generator";
 export * from "./backtest";
 export * from "./luckProfile";
+export * from "./analyzer";
 export * from "./rng";
