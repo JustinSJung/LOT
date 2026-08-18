@@ -20,8 +20,19 @@ export const ANALYZER_SIMULATION_SAMPLE_SIZE = 2000;
 /** Candidate pool size for the bulk generator (ranks within this same pool). */
 export const GENERATOR_POOL_SIZE = 2000;
 
-/** Rounds included in a standard backtest run. */
-export const DEFAULT_BACKTEST_SAMPLE_SIZE = 100;
+/**
+ * Rounds included in a standard backtest run. Set well above any realistic
+ * dataset size so a run effectively covers "every eligible draw" — the real
+ * cap in practice is BACKTEST_MIN_HISTORY plus however many draws exist.
+ */
+export const DEFAULT_BACKTEST_SAMPLE_SIZE = 100_000;
 
-/** Minimum draws required before a round is included in a backtest. */
-export const BACKTEST_MIN_HISTORY = 10;
+/**
+ * Minimum prior draws required before a draw is included in a backtest
+ * ("warmup" period). 100 was chosen so frequency/recent-trend/gap/pair stats
+ * have enough history to be non-trivial before a round counts as a real test.
+ */
+export const BACKTEST_MIN_HISTORY = 100;
+
+/** Expected match count for a uniformly random 6-pick against a 6/45 draw: 6 * (6/45). */
+export const THEORETICAL_EXPECTED_MATCHES = 6 * (6 / 45);
