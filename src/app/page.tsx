@@ -26,9 +26,15 @@ export default function Home() {
         >
           내 번호 분석하기
         </Link>
+        <Link
+          href="/history"
+          className="rounded-full border border-neutral-700 px-6 py-3 text-sm font-semibold text-neutral-200 transition-colors hover:border-neutral-500"
+        >
+          회차 이력 보기
+        </Link>
       </div>
       <p className="max-w-md text-xs text-neutral-500">
-        회차 이력, 통계, 백테스트 화면은 다음 단계에서 추가됩니다.
+        통계, 백테스트 화면은 다음 단계에서 추가됩니다.
       </p>
     </main>
   );
