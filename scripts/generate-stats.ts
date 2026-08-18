@@ -14,7 +14,8 @@ import { computeGaps } from "../src/lib/lottery/gap";
 import { oddEvenSplit, lowHighSplit, sumDistribution } from "../src/lib/lottery/distribution";
 import { pairFrequency, tripleFrequency, topEntries } from "../src/lib/lottery/patterns";
 import { runBacktest } from "../src/lib/lottery/backtest";
-import { DEFAULT_BACKTEST_SAMPLE_SIZE } from "../src/lib/lottery/config";
+import { createRng } from "../src/lib/lottery/rng";
+import { DEFAULT_BACKTEST_SAMPLE_SIZE, BACKTEST_SEED } from "../src/lib/lottery/config";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, "..", "data");
@@ -90,11 +91,18 @@ function main() {
   });
 
   // --- backtest.json ---
-  const backtest = runBacktest(draws, { sampleSize: DEFAULT_BACKTEST_SAMPLE_SIZE, model: "ensemble" });
+  // Fixed seed -> reproducible: same draws.json always yields identical backtest.json
+  // (see scripts/verify-backtest-reproducibility.ts).
+  const backtest = runBacktest(draws, {
+    sampleSize: DEFAULT_BACKTEST_SAMPLE_SIZE,
+    model: "ensemble",
+    rng: createRng(BACKTEST_SEED),
+  });
   writeJson("backtest.json", {
     generatedAt,
     drawCount: draws.length,
     requestedSampleSize: DEFAULT_BACKTEST_SAMPLE_SIZE,
+    seed: BACKTEST_SEED,
     ...backtest,
   });
 }

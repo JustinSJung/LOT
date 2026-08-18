@@ -36,3 +36,11 @@ export const BACKTEST_MIN_HISTORY = 100;
 
 /** Expected match count for a uniformly random 6-pick against a 6/45 draw: 6 * (6/45). */
 export const THEORETICAL_EXPECTED_MATCHES = 6 * (6 / 45);
+
+/**
+ * Fixed seed for the "official" reproducible backtest run (the numbers that
+ * ship in data/backtest.json and get cited in README/methodology/UI). Any
+ * two runs with this seed produce byte-identical output — see
+ * scripts/verify-backtest-reproducibility.ts.
+ */
+export const BACKTEST_SEED = 42;

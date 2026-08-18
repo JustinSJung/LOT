@@ -2,10 +2,12 @@ import type { Draw, LottoNumber } from "./types";
 import { generateCombinations, type GeneratorModel } from "./generator";
 import { randomCombination } from "./monteCarlo";
 import { countMatches } from "./rank";
+import { createRng } from "./rng";
 import {
   DEFAULT_BACKTEST_SAMPLE_SIZE,
   BACKTEST_MIN_HISTORY,
   THEORETICAL_EXPECTED_MATCHES,
+  BACKTEST_SEED,
 } from "./config";
 
 export interface BacktestRoundResult {
@@ -123,6 +125,10 @@ function computeSampleStats(values: number[]): SampleStats {
  * are included as a minimal check on whether an observed AI-vs-random gap looks
  * like noise; they are not a substitute for a proper significance test, and a
  * "not noise" result here still would not imply improved real-world odds.
+ *
+ * Defaults to a fixed-seed PRNG (BACKTEST_SEED) so the same inputs always
+ * produce byte-identical output — see scripts/verify-backtest-reproducibility.ts.
+ * Pass a different `rng` explicitly to sample a different run.
  */
 export function runBacktest(
   draws: Draw[],
@@ -137,7 +143,7 @@ export function runBacktest(
     sampleSize = DEFAULT_BACKTEST_SAMPLE_SIZE,
     model = "ensemble",
     poolSize = 500,
-    rng = Math.random,
+    rng = createRng(BACKTEST_SEED),
   } = options;
 
   const sorted = [...draws].sort((a, b) => a.drawNumber - b.drawNumber);

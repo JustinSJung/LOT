@@ -4,6 +4,7 @@ import { computeGaps, type GapInfo } from "./gap";
 import { oddEvenSplit, lowHighSplit } from "./distribution";
 import { pairFrequency as computePairFrequency } from "./patterns";
 import { randomCombination } from "./monteCarlo";
+import { createRng } from "./rng";
 import { ENSEMBLE_WEIGHTS, RECENT_TREND_WINDOW, ANALYZER_SIMULATION_SAMPLE_SIZE } from "./config";
 
 export interface ScoringContext {
@@ -99,7 +100,7 @@ export function scoreSimulation(
   numbers: LottoNumber[],
   ctx: ScoringContext,
   sampleSize = ANALYZER_SIMULATION_SAMPLE_SIZE,
-  rng: () => number = Math.random,
+  rng: () => number = createRng(Date.now()),
 ): number {
   const candidateRaw = rawAffinity(numbers, ctx);
   let atOrBelow = 0;

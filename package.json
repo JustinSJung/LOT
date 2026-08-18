@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "fetch-draws": "tsx scripts/fetch-draws.ts",
-    "generate-stats": "tsx scripts/generate-stats.ts"
+    "generate-stats": "tsx scripts/generate-stats.ts",
+    "verify-reproducibility": "tsx scripts/verify-backtest-reproducibility.ts"
   },
   "dependencies": {
     "lucide-react": "^1.31.0",

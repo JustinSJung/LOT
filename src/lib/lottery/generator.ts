@@ -1,5 +1,6 @@
 import type { Draw, LottoNumber, ScoredCombination } from "./types";
 import { randomCombination } from "./monteCarlo";
+import { createRng } from "./rng";
 import {
   buildScoringContext,
   scoreFrequency,
@@ -91,7 +92,7 @@ export function generateCombinations(
     model = "ensemble",
     count = 5,
     poolSize = GENERATOR_POOL_SIZE,
-    rng = Math.random,
+    rng = createRng(Date.now()),
     diversityLimit = Math.max(1, Math.round(count * 0.5)),
   } = options;
 
