@@ -64,6 +64,11 @@
 - **Explore**: 모델·표본 크기를 바꿔 직접 재실행(같은 시드로 조건만 비교),
   "여러 조합을 둘러본 뒤 특정 결과 하나만 떼어서 해석하지 마세요" 경고 포함
 
+### 방법론 (`/methodology`)
+"이 사이트의 점수는 당첨 확률이 아니라 통계적 순위 점수"라는 핵심 원칙, 이
+사이트가 쓰는 용어(Statistical Score/Historical Pattern/Model Preference 등)
+설명, 금지 표현/대체 표현 목록, 페이지별 고지 요약을 한 곳에 모은 페이지.
+
 ### Achievement (백그라운드 시스템)
 로또 참여 횟수가 아니라 **분석 기능 사용**을 기준으로 하는 9종 업적을
 localStorage에 추적합니다(Pattern Detective, Data Explorer, Number Analyst,
@@ -81,7 +86,7 @@ Backtest Explorer, Number Personality, What-If Thinker, Set Collector 등 —
 
 ```
 src/
-  app/                    Next.js App Router 페이지 (generator, analyze, history, statistics, backtest)
+  app/                    Next.js App Router 페이지 (generator, analyze, history, statistics, backtest, methodology)
   components/             공용 UI (NumberBall, SiteHeader, SiteFooter)
   lib/
     lottery/              통계 엔진 — 프레임워크 비의존 순수 함수
@@ -236,8 +241,6 @@ npm run verify-reproducibility  # 백테스트 재현성 검증
 
 - **Number Battle**, **Share Card** 미구현 (아래 Roadmap 참고)
 - 업적(Achievement) 카운터는 쌓이지만 **확인할 수 있는 화면이 없음**
-- `/methodology` 같은 통합 방법론 설명 페이지는 없고, 관련 고지문이 각 페이지에
-  흩어져 있음
 - OG 이미지(소셜 공유용 카드 이미지) 없음 — 텍스트 메타데이터만 존재
 - 백테스트 표본(1,137회차)이 통계적으로 크지 않고, z-score는 정식 유의성
   검정이 아닌 참고 지표
@@ -266,7 +269,6 @@ npm run verify-reproducibility  # 백테스트 재현성 검증
 - [ ] **Share Card** — 번호+점수+"Historical statistical ranking only." 문구를
   Web Share API로 공유 (achievement 카운터 `resultsShared`만 정의되어 있음)
 - [ ] 업적/뱃지 확인 화면 (현재는 localStorage에 카운터만 쌓임)
-- [ ] `/methodology` 통합 방법론 페이지
 - [ ] OG 이미지 자동 생성
 - [ ] 친구와 번호 대결 (공유 URL 기반)
 - [ ] 사용자 계정, 커뮤니티 번호 등록/리더보드 (Supabase 등)

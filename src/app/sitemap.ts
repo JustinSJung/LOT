@@ -10,6 +10,7 @@ const ROUTES: { path: string; priority: number; changeFrequency: "daily" | "week
   { path: "/statistics/", priority: 0.8, changeFrequency: "weekly" },
   { path: "/history/", priority: 0.7, changeFrequency: "weekly" },
   { path: "/backtest/", priority: 0.7, changeFrequency: "weekly" },
+  { path: "/methodology/", priority: 0.6, changeFrequency: "weekly" },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -45,6 +45,12 @@ export default function Home() {
           백테스트 결과 보기
         </Link>
       </div>
+      <Link
+        href="/methodology"
+        className="text-xs text-neutral-500 underline decoration-neutral-700 hover:text-neutral-300"
+      >
+        이 사이트의 점수가 뭘 의미하는지 궁금하다면 → 방법론
+      </Link>
     </main>
   );
 }

@@ -9,6 +9,7 @@ const NAV_ITEMS = [
   { href: "/history", label: "회차 이력" },
   { href: "/statistics", label: "통계" },
   { href: "/backtest", label: "백테스트" },
+  { href: "/methodology", label: "방법론" },
 ];
 
 export function SiteHeader() {
