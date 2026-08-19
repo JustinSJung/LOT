@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "fetch-draws": "tsx scripts/fetch-draws.ts",
     "generate-stats": "tsx scripts/generate-stats.ts",
     "verify-reproducibility": "tsx scripts/verify-backtest-reproducibility.ts",
@@ -31,6 +33,7 @@
     "eslint-config-next": "16.3.1",
     "tailwindcss": "^4",
     "tsx": "^4.23.12",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^4.1.11"
   }
 }

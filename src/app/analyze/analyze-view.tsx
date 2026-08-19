@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { analyzeNumberSet, PRIZE_LABELS, type Draw, type LottoNumber, type NumberSetAnalysis } from "@/lib/lottery";
+import { analyzeNumberSet, validateCombination, PRIZE_LABELS, type Draw, type NumberSetAnalysis } from "@/lib/lottery";
 import { incrementCounter } from "@/lib/achievements";
 import { publicAsset } from "@/lib/basePath";
 import { PerNumberStats } from "./per-number-stats";
@@ -40,13 +40,13 @@ export function AnalyzeView() {
     if (!draws) return;
 
     const numbers = inputs.map((v) => parseInt(v, 10));
-    if (numbers.some((n: LottoNumber) => Number.isNaN(n) || n < 1 || n > 45)) {
-      setValidationError("1부터 45 사이의 숫자를 모두 입력해주세요.");
-      return;
-    }
-    const unique = new Set(numbers);
-    if (unique.size !== 6) {
-      setValidationError("중복되지 않는 숫자 6개를 입력해주세요.");
+    const result = validateCombination(numbers);
+    if (!result.valid) {
+      setValidationError(
+        result.error === "DUPLICATE"
+          ? "중복되지 않는 숫자 6개를 입력해주세요."
+          : "1부터 45 사이의 숫자를 모두 입력해주세요.",
+      );
       return;
     }
 

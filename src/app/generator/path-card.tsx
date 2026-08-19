@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { NumberBall } from "@/components/number-ball";
 import { LuckProfilePanel } from "./luck-profile-panel";
-import type { LottoNumber, LuckProfile } from "@/lib/lottery";
+import { isValidLottoNumber, type LottoNumber, type LuckProfile } from "@/lib/lottery";
 import type { GeneratorPathOption as GeneratorPath } from "@/lib/generatorPaths";
 
 interface PathCardProps {
@@ -34,7 +34,7 @@ export function PathCard({
 
   function submitSwap() {
     const n = parseInt(swapValue, 10);
-    if (swapSlot === null || Number.isNaN(n) || n < 1 || n > 45 || numbers.includes(n)) return;
+    if (swapSlot === null || !isValidLottoNumber(n) || numbers.includes(n)) return;
     onSwap(swapSlot, n);
     setSwapSlot(null);
     setSwapValue("");
