@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-10-03T16:35:57.788Z",
-  "drawCount": 1244,
+  "generatedAt": "2026-10-10T17:25:53.276Z",
+  "drawCount": 1245,
   "requestedSampleSize": 100000,
   "seed": 42,
   "model": "ensemble",
-  "sampleSize": 1144,
+  "sampleSize": 1145,
   "theoreticalExpectedMatches": 0.8,
-  "aiAverageMatch": 0.7928,
+  "aiAverageMatch": 0.7921,
   "aiStdDev": 0.7713,
   "aiStdError": 0.0228,
-  "randomAverageMatch": 0.7727,
+  "randomAverageMatch": 0.7721,
   "randomStdDev": 0.7604,
   "randomStdError": 0.0225,
-  "meanDifference": 0.0201,
+  "meanDifference": 0.02,
   "standardErrorOfDifference": 0.032,
-  "zScore": 0.6281,
+  "zScore": 0.625,
   "aiThreePlus": 21,
   "randomThreePlus": 21,
-  "aiThreePlusRate": 0.0184,
-  "randomThreePlusRate": 0.0184,
+  "aiThreePlusRate": 0.0183,
+  "randomThreePlusRate": 0.0183,
   "threeMatchStandardError": 0.0056,
   "threeMatchZScore": 0,
   "aiFourPlus": 1,
@@ -24047,6 +24047,27 @@
         34
       ],
       "randomMatches": 1
+    },
+    {
+      "drawNumber": 1245,
+      "aiNumbers": [
+        3,
+        13,
+        20,
+        24,
+        27,
+        34
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        1,
+        13,
+        17,
+        24,
+        35,
+        44
+      ],
+      "randomMatches": 0
     }
   ]
 }

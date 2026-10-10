@@ -16170,5 +16170,18 @@
       38
     ],
     "bonusNumber": 25
+  },
+  {
+    "drawNumber": 1245,
+    "date": "2026-10-10",
+    "numbers": [
+      4,
+      5,
+      25,
+      28,
+      32,
+      42
+    ],
+    "bonusNumber": 12
   }
 ]

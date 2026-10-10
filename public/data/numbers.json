@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-03T16:35:57.788Z",
-  "drawCount": 1244,
+  "generatedAt": "2026-10-10T17:25:53.276Z",
+  "drawCount": 1245,
   "recentWindow": 30,
   "numbers": [
     {
@@ -8,315 +8,315 @@
       "frequency": 171,
       "recentFrequency": 4,
       "lastSeenDrawNumber": 1244,
-      "gap": 0
+      "gap": 1
     },
     {
       "number": 2,
       "frequency": 157,
       "recentFrequency": 5,
       "lastSeenDrawNumber": 1242,
-      "gap": 2
+      "gap": 3
     },
     {
       "number": 3,
       "frequency": 172,
       "recentFrequency": 3,
       "lastSeenDrawNumber": 1230,
-      "gap": 14
+      "gap": 15
     },
     {
       "number": 4,
-      "frequency": 163,
-      "recentFrequency": 4,
-      "lastSeenDrawNumber": 1242,
-      "gap": 2
+      "frequency": 164,
+      "recentFrequency": 5,
+      "lastSeenDrawNumber": 1245,
+      "gap": 0
     },
     {
       "number": 5,
-      "frequency": 153,
-      "recentFrequency": 0,
-      "lastSeenDrawNumber": 1213,
-      "gap": 31
+      "frequency": 154,
+      "recentFrequency": 1,
+      "lastSeenDrawNumber": 1245,
+      "gap": 0
     },
     {
       "number": 6,
       "frequency": 166,
       "recentFrequency": 3,
       "lastSeenDrawNumber": 1235,
-      "gap": 9
+      "gap": 10
     },
     {
       "number": 7,
       "frequency": 171,
       "recentFrequency": 3,
       "lastSeenDrawNumber": 1241,
-      "gap": 3
+      "gap": 4
     },
     {
       "number": 8,
       "frequency": 158,
       "recentFrequency": 3,
       "lastSeenDrawNumber": 1230,
-      "gap": 14
+      "gap": 15
     },
     {
       "number": 9,
       "frequency": 137,
       "recentFrequency": 4,
       "lastSeenDrawNumber": 1243,
-      "gap": 1
+      "gap": 2
     },
     {
       "number": 10,
       "frequency": 163,
       "recentFrequency": 4,
       "lastSeenDrawNumber": 1242,
-      "gap": 2
+      "gap": 3
     },
     {
       "number": 11,
       "frequency": 168,
       "recentFrequency": 4,
       "lastSeenDrawNumber": 1240,
-      "gap": 4
+      "gap": 5
     },
     {
       "number": 12,
       "frequency": 180,
       "recentFrequency": 3,
       "lastSeenDrawNumber": 1236,
-      "gap": 8
+      "gap": 9
     },
     {
       "number": 13,
       "frequency": 184,
-      "recentFrequency": 10,
+      "recentFrequency": 9,
       "lastSeenDrawNumber": 1244,
-      "gap": 0
+      "gap": 1
     },
     {
       "number": 14,
       "frequency": 172,
       "recentFrequency": 3,
       "lastSeenDrawNumber": 1231,
-      "gap": 13
+      "gap": 14
     },
     {
       "number": 15,
       "frequency": 170,
-      "recentFrequency": 7,
+      "recentFrequency": 6,
       "lastSeenDrawNumber": 1235,
-      "gap": 9
+      "gap": 10
     },
     {
       "number": 16,
       "frequency": 170,
       "recentFrequency": 4,
       "lastSeenDrawNumber": 1242,
-      "gap": 2
+      "gap": 3
     },
     {
       "number": 17,
       "frequency": 171,
       "recentFrequency": 2,
       "lastSeenDrawNumber": 1226,
-      "gap": 18
+      "gap": 19
     },
     {
       "number": 18,
       "frequency": 180,
       "recentFrequency": 8,
       "lastSeenDrawNumber": 1244,
-      "gap": 0
+      "gap": 1
     },
     {
       "number": 19,
       "frequency": 171,
-      "recentFrequency": 5,
+      "recentFrequency": 4,
       "lastSeenDrawNumber": 1240,
-      "gap": 4
+      "gap": 5
     },
     {
       "number": 20,
       "frequency": 172,
       "recentFrequency": 5,
       "lastSeenDrawNumber": 1240,
-      "gap": 4
+      "gap": 5
     },
     {
       "number": 21,
       "frequency": 167,
-      "recentFrequency": 3,
+      "recentFrequency": 2,
       "lastSeenDrawNumber": 1236,
-      "gap": 8
+      "gap": 9
     },
     {
       "number": 22,
       "frequency": 146,
       "recentFrequency": 5,
       "lastSeenDrawNumber": 1239,
-      "gap": 5
+      "gap": 6
     },
     {
       "number": 23,
       "frequency": 149,
       "recentFrequency": 3,
       "lastSeenDrawNumber": 1241,
-      "gap": 3
+      "gap": 4
     },
     {
       "number": 24,
       "frequency": 168,
       "recentFrequency": 5,
       "lastSeenDrawNumber": 1243,
-      "gap": 1
+      "gap": 2
     },
     {
       "number": 25,
-      "frequency": 153,
-      "recentFrequency": 3,
-      "lastSeenDrawNumber": 1233,
-      "gap": 11
+      "frequency": 154,
+      "recentFrequency": 4,
+      "lastSeenDrawNumber": 1245,
+      "gap": 0
     },
     {
       "number": 26,
       "frequency": 166,
       "recentFrequency": 2,
       "lastSeenDrawNumber": 1244,
-      "gap": 0
+      "gap": 1
     },
     {
       "number": 27,
       "frequency": 181,
       "recentFrequency": 1,
       "lastSeenDrawNumber": 1224,
-      "gap": 20
+      "gap": 21
     },
     {
       "number": 28,
-      "frequency": 157,
-      "recentFrequency": 6,
-      "lastSeenDrawNumber": 1230,
-      "gap": 14
+      "frequency": 158,
+      "recentFrequency": 7,
+      "lastSeenDrawNumber": 1245,
+      "gap": 0
     },
     {
       "number": 29,
       "frequency": 156,
       "recentFrequency": 4,
       "lastSeenDrawNumber": 1236,
-      "gap": 8
+      "gap": 9
     },
     {
       "number": 30,
       "frequency": 158,
       "recentFrequency": 2,
       "lastSeenDrawNumber": 1228,
-      "gap": 16
+      "gap": 17
     },
     {
       "number": 31,
       "frequency": 171,
       "recentFrequency": 7,
       "lastSeenDrawNumber": 1242,
-      "gap": 2
+      "gap": 3
     },
     {
       "number": 32,
-      "frequency": 146,
-      "recentFrequency": 5,
-      "lastSeenDrawNumber": 1239,
-      "gap": 5
+      "frequency": 147,
+      "recentFrequency": 6,
+      "lastSeenDrawNumber": 1245,
+      "gap": 0
     },
     {
       "number": 33,
       "frequency": 175,
       "recentFrequency": 2,
       "lastSeenDrawNumber": 1239,
-      "gap": 5
+      "gap": 6
     },
     {
       "number": 34,
       "frequency": 187,
       "recentFrequency": 6,
       "lastSeenDrawNumber": 1244,
-      "gap": 0
+      "gap": 1
     },
     {
       "number": 35,
       "frequency": 163,
       "recentFrequency": 2,
       "lastSeenDrawNumber": 1234,
-      "gap": 10
+      "gap": 11
     },
     {
       "number": 36,
       "frequency": 165,
       "recentFrequency": 3,
       "lastSeenDrawNumber": 1239,
-      "gap": 5
+      "gap": 6
     },
     {
       "number": 37,
       "frequency": 174,
       "recentFrequency": 3,
       "lastSeenDrawNumber": 1237,
-      "gap": 7
+      "gap": 8
     },
     {
       "number": 38,
       "frequency": 174,
       "recentFrequency": 5,
       "lastSeenDrawNumber": 1244,
-      "gap": 0
+      "gap": 1
     },
     {
       "number": 39,
       "frequency": 168,
       "recentFrequency": 3,
       "lastSeenDrawNumber": 1235,
-      "gap": 9
+      "gap": 10
     },
     {
       "number": 40,
       "frequency": 174,
       "recentFrequency": 2,
       "lastSeenDrawNumber": 1237,
-      "gap": 7
+      "gap": 8
     },
     {
       "number": 41,
       "frequency": 151,
       "recentFrequency": 4,
       "lastSeenDrawNumber": 1242,
-      "gap": 2
+      "gap": 3
     },
     {
       "number": 42,
-      "frequency": 158,
-      "recentFrequency": 5,
-      "lastSeenDrawNumber": 1238,
-      "gap": 6
+      "frequency": 159,
+      "recentFrequency": 6,
+      "lastSeenDrawNumber": 1245,
+      "gap": 0
     },
     {
       "number": 43,
       "frequency": 167,
       "recentFrequency": 5,
       "lastSeenDrawNumber": 1243,
-      "gap": 1
+      "gap": 2
     },
     {
       "number": 44,
       "frequency": 166,
-      "recentFrequency": 6,
+      "recentFrequency": 5,
       "lastSeenDrawNumber": 1243,
-      "gap": 1
+      "gap": 2
     },
     {
       "number": 45,
       "frequency": 175,
-      "recentFrequency": 4,
+      "recentFrequency": 3,
       "lastSeenDrawNumber": 1224,
-      "gap": 20
+      "gap": 21
     }
   ]
 }
