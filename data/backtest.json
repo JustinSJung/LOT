@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-10-17T15:49:29.760Z",
-  "drawCount": 1246,
+  "generatedAt": "2026-10-24T16:09:52.074Z",
+  "drawCount": 1247,
   "requestedSampleSize": 100000,
   "seed": 42,
   "model": "ensemble",
-  "sampleSize": 1146,
+  "sampleSize": 1147,
   "theoreticalExpectedMatches": 0.8,
-  "aiAverageMatch": 0.7923,
+  "aiAverageMatch": 0.7916,
   "aiStdDev": 0.771,
   "aiStdError": 0.0228,
-  "randomAverageMatch": 0.7723,
+  "randomAverageMatch": 0.7716,
   "randomStdDev": 0.7601,
-  "randomStdError": 0.0225,
+  "randomStdError": 0.0224,
   "meanDifference": 0.02,
   "standardErrorOfDifference": 0.032,
   "zScore": 0.625,
@@ -24089,6 +24089,27 @@
         36
       ],
       "randomMatches": 1
+    },
+    {
+      "drawNumber": 1247,
+      "aiNumbers": [
+        13,
+        15,
+        17,
+        18,
+        30,
+        31
+      ],
+      "aiMatches": 0,
+      "randomNumbers": [
+        6,
+        7,
+        9,
+        17,
+        24,
+        44
+      ],
+      "randomMatches": 0
     }
   ]
 }
